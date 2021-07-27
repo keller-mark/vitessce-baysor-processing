@@ -1,0 +1,16 @@
+name: vitessce-baysor-env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.7
+  - jupyter
+  - jupyterlab
+  - pandas
+  - numpy
+  - zarr
+  - anndata
+  - scanpy
+  - geopandas
+  - tifffile
+  - shapely 
