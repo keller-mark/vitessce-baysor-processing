@@ -1,0 +1,6 @@
+data/
+.ipynb_checkpoints/
+.snakemake/
+*.zarr/
+*.json
+.DS_Store
