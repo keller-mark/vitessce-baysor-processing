@@ -4,14 +4,26 @@ Requires:
 - `bfconvert`
 - FIJI
 
+Data:
+- Move files from `baysor_selected_3d.zip` into `data/`
+- Move files from `stains.zip` into `data/stains/`
+
+
+Set up environment:
+
 ```sh
 conda env create -f environment.yml
 conda activate vitessce-baysor-env
 ```
 
+Run pipeline:
 
 ```sh
-tiffcomment ./data/stains/selected.ome.tiff > ./data/stains/selected.in.ome.xml
-python src/add_channel_names.py -i ./data/stains/selected.in.ome.xml -o ./data/stains/selected.out.ome.xml
-tiffcomment -set './data/stains/selected.out.ome.xml' ./data/stains/selected.ome.tiff
+snakemake -j 1
 ```
+
+List of processed files for Vitessce:
+- `data/molecules.json`
+- `data/poly_per_z_0.json`
+- `data/segmentation.zarr/`
+- `data/stains/selected.ome.tiff`
