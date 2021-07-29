@@ -22,6 +22,12 @@ Run pipeline:
 snakemake -j 1
 ```
 
+Run notebook:
+
+```sh
+jupyter lab ./processing.ipynb
+```
+
 List of processed files for Vitessce:
 - `data/molecules.json`
 - `data/poly_per_z_0.json`
