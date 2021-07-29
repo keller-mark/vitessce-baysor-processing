@@ -13,4 +13,7 @@ dependencies:
   - scanpy
   - geopandas
   - tifffile
-  - shapely 
+  - shapely
+  - snakemake
+  - beautifulsoup4
+  - lxml
