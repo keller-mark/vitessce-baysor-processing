@@ -7,8 +7,6 @@ polyA = IJ.openImage(dataDir + "/polyA_selected.tif");
 imp = Concatenator.run(dapi, membrane, polyA);
 imp2 = HyperStackConverter.toHyperStack(imp, 3, 9, 1, "xyzct", "Grayscale");
 
-IJ.run(imp2, "16-bit", "");
-
 // Begin restrict to 0th z slice
 IJ.run(imp2, "Make Substack...", "channels=1-3 slices=1");
 imp3 = IJ.getImage();
