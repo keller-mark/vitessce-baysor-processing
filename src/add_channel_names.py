@@ -11,9 +11,9 @@ def add_channel_names(in_xml_file, out_xml_file):
   channel_els = soup.find_all('Channel')
   
   channel_names = [
-      "DAPI",
-      "Membrane",
-      "PolyA"
+    "DAPI",
+    "Membrane",
+    "PolyA"
   ]
   
   for name, el in zip(channel_names, channel_els):
