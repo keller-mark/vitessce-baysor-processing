@@ -29,7 +29,7 @@ jupyter lab ./processing.ipynb
 ```
 
 List of processed files for Vitessce:
-- `data/molecules.json`
+- `data/cells.zarr/`
+- `data/molecules.zarr/`
 - `data/poly_per_z_0.json`
-- `data/segmentation.zarr/`
 - `data/stains/selected.ome.tiff`
